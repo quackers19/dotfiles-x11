@@ -2,6 +2,7 @@
 All the dotfiles are in folder 
 
 - Windows Manager: i3
+- Theme: breeze-gtk
 - Run: rofi
 - Editor: nano
 - Bar: polybar
@@ -9,5 +10,6 @@ All the dotfiles are in folder
 - Shell: zsh with powerline10k
 - Terminal: alacritty
 - Wallpaper: nitrogen
+
 
 Wll add screen shots later
