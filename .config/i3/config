@@ -198,7 +198,7 @@ client.background       #FFFFF
 workspace_layout tabbed
 
 #wallpaper
-exec --no-startup-id nitrogen --restore &
+exec --no-startup-id nitrogen --set-auto ~/wallpaper/211007-Wallpaper.jpg &
 
 #start composter
 exec --no-startup-id picom -b
