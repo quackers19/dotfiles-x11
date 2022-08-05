@@ -9,6 +9,7 @@ All the dotfiles are in folder
 - Composter: picom
 - Shell: zsh with powerline10k
 - Terminal: alacritty
+- File manger: Thunar
 - Wallpaper manger: nitrogen
 
 
