@@ -11,45 +11,45 @@ if [ "$(id -u)" = 0 ]; then
     exit 1
 fi
 
-print_message "Updating repositories:"
+echo "Updating repositories:"
 sudo pacman -Syu
-print_message "Finished updating repositories!"
+echo "Finished updating repositories!"
 
-print_message "Installing base-devel:"
+echo "Installing base-devel:"
 sudo pacman -Syy --needed --noconfirm base-devel
-print_message "base-devel installed!"
+echo "base-devel installed!"
 
-print_message "Installing yay:"
+echo "Installing yay:"
 cd /tmp && git clone https://aur.archlinux.org/yay && cd /tmp/yay && makepkg -si
-print_message "Yay installed!"
+echo "Yay installed!"
 
 cd ~
 
-print_message "Installing oh-my-zsh:"
+echo "Installing oh-my-zsh:"
 sudo pacman -Sy zsh --noconfirm
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
-print_message "Oh-my-zsh installed!"
+echo "Oh-my-zsh installed!"
 
-print_message "installing apps"
+echo "installing apps"
 sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nirtogen rofi breeze-gtk thunar lxappearance  pacman-contrib --noconfirm
-print_message "apps installed!"
+echo "apps installed!"
 
 
-print_message "enable pacchae.timer"
+echo "enable pacchae.timer"
 systemctl enable paccache.timer
-print_message "enabled paccahe.timer"
+echo "enabled paccahe.timer"
 
-print_message "adding configs"
+echo "adding configs"
 mkdir -p ~/.config
 cp -r .config ~/
 
-print_message "adding fonts"
+echo "adding fonts"
 mkdir -p ~/.fonts
 cp -r .fonts/* ~/.fonts/
 
 
-print_message "set default shell to zsh"
+echo "set default shell to zsh"
 chsh -s $(which zsh)
