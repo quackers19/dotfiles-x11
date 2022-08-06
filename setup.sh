@@ -34,5 +34,10 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/th
 print_message "Oh-my-zsh installed!"
 
 print_message "installing apps"
-sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nirtogen rofi breeze-gtk thunar --noconfirm
+sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nirtogen rofi breeze-gtk thunar lxappearance  pacman-contrib --noconfirm
 print_message "apps installed!"
+
+
+print_message "enable pacchae.timer"
+systemctl enable paccache.timer
+print_message "enabled paccahe.timer"
