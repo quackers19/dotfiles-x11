@@ -41,3 +41,6 @@ print_message "apps installed!"
 print_message "enable pacchae.timer"
 systemctl enable paccache.timer
 print_message "enabled paccahe.timer"
+
+print_message "set default shell to zsh"
+chsh -s $(which zsh)
