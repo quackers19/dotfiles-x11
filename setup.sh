@@ -42,5 +42,14 @@ print_message "enable pacchae.timer"
 systemctl enable paccache.timer
 print_message "enabled paccahe.timer"
 
+print_message "adding configs"
+mkdir -p ~/.config
+cp -r .config ~/
+
+print_message "adding fonts"
+mkdir -p ~/.fonts
+cp -r .fonts/* ~/.fonts/
+
+
 print_message "set default shell to zsh"
 chsh -s $(which zsh)
