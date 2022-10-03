@@ -20,3 +20,4 @@ Notes about post-install tweaks
 - install breeze-gtk for theme then install and use lxapearance to switch
 - make sure to install pacman-contrib and enable paccache.timer this clear pacman cache every week
   - use systemctl enable paccache.timer
+- enable paralel downloads in pacman.conf
