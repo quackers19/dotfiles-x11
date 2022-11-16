@@ -25,14 +25,6 @@ echo "Yay installed!"
 
 cd ~
 
-echo "Installing oh-my-zsh:"
-sudo pacman -Sy zsh --noconfirm
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
-echo "Oh-my-zsh installed!"
-
 echo "installing apps"
 sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nirtogen rofi breeze-gtk thunar lxappearance  pacman-contrib --noconfirm
 echo "apps installed!"
@@ -50,6 +42,13 @@ echo "adding fonts"
 mkdir -p ~/.fonts
 cp -r .fonts/* ~/.fonts/
 
+echo "Installing oh-my-zsh:"
+sudo pacman -Sy zsh --noconfirm
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
+echo "Oh-my-zsh installed!"
 
 echo "set default shell to zsh"
 chsh -s $(which zsh)
