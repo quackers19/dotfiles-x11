@@ -36,7 +36,7 @@ echo "enabled paccahe.timer"
 
 echo "adding configs"
 mkdir -p ~/.config
-cp -r .config ~/
+cp -r .config/* ~/.config
 
 echo "adding fonts"
 mkdir -p ~/.fonts
