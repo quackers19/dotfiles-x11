@@ -26,7 +26,7 @@ echo "Yay installed!"
 cd ~
 
 echo "installing apps"
-sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nirtogen rofi breeze-gtk thunar lxappearance  pacman-contrib --noconfirm
+sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance  pacman-contrib --noconfirm
 echo "apps installed!"
 
 
