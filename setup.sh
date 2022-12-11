@@ -37,7 +37,8 @@ echo "enabled paccahe.timer"
 echo "adding configs"
 mkdir -p ~/.config
 cp -r .config/* ~/.config
-
+cp .p10k.zsh ~/
+cp .zshrc ~/
 echo "adding fonts"
 mkdir -p ~/.fonts
 cp -r .fonts/* ~/.fonts/
