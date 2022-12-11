@@ -34,22 +34,31 @@ echo "enable pacchae.timer"
 systemctl enable paccache.timer
 echo "enabled paccahe.timer"
 
-echo "adding configs"
-mkdir -p ~/.config
-cp -r .config/* ~/.config
-cp .p10k.zsh ~/
-cp .zshrc ~/
+
 echo "adding fonts"
 mkdir -p ~/.fonts
 cp -r .fonts/* ~/.fonts/
 
 echo "Installing oh-my-zsh:"
 sudo pacman -Sy zsh --noconfirm
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+echo "zsh installed"
+
+# install oh-my-zsh
+curl https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh --output install-oh-my-zsh.sh
+sh install-oh-my-zsh.sh --unattended
+
+# install powerlevel10k theme in oh-my-zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/plugins/zsh-syntax-highlighting
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/themes/powerlevel10k
 echo "Oh-my-zsh installed!"
+
+echo "adding configs"
+mkdir -p ~/.config
+cp -r .config/* ~/.config
+cp .p10k.zsh ~/
+cp .zshrc ~/
 
 echo "set default shell to zsh"
 chsh -s $(which zsh)
