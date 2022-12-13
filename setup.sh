@@ -40,6 +40,9 @@ cd ~/dotfiles
 mkdir -p ~/.fonts
 cp -r .fonts/* ~/.fonts/
 
+echo "enabled parrele downloads pacman"
+sudo sed -i '/ParallelDownloads/s/^#//g' /etc/pacman.conf
+
 echo "setting up wallpaper"
 mkdir -p ~/wallpaper
 cp 211007-Wallpaper.jpg ~/wallpaper
