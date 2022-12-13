@@ -40,6 +40,11 @@ cd ~/dotfiles
 mkdir -p ~/.fonts
 cp -r .fonts/* ~/.fonts/
 
+echo "setting up wallpaper"
+mkdir -p ~/wallpaper
+cp 211007-Wallpaper.jpg ~/wallpaper
+nitrogen --set-auto ~/wallpaper/211007-Wallpaper.jpg
+
 echo "Installing oh-my-zsh:"
 sudo pacman -Sy zsh --noconfirm
 echo "zsh installed"
