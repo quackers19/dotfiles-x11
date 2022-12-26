@@ -194,6 +194,8 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
 client.background       #FFFFF
 
+#set prefered layout
+workspace_layout tabbed
 
 #wallpaper
 exec --no-startup-id nitrogen --set-auto ~/wallpaper/211007-Wallpaper.jpg &
