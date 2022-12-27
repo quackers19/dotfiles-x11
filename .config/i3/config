@@ -51,10 +51,9 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-#bindsym $mod+d exec --no-startup-id rofi -modi drun,run,ssh -theme solarized -font "hack 10" -show run
+bindsym $mod+d exec --no-startup-id ~/.config/polybar/launcher.sh
 
-# A more modern dmenu replacement is rofi:
-bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+
 # There also is i3-dmenu-desktop which only displays applications shipping a
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
@@ -152,6 +151,9 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+#open powermenu
+bindsym $mod+x exec --no-startup-id ~/.config/polybar/powermenu.sh 
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
