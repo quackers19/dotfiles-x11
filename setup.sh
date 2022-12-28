@@ -29,7 +29,7 @@ echo "Yay installed!"
 cd ~
 
 echo "installing apps"
-sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib --noconfirm
+sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib timeshift --noconfirm
 echo "apps installed!"
 
 
