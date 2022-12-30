@@ -33,9 +33,9 @@ sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nitrogen 
 echo "apps installed!"
 
 
-echo "enable pacchae.timer"
-systemctl enable paccache.timer
-echo "enabled paccahe.timer"
+echo "enable pacchae.timer and disk trim"
+systemctl enable paccache.timer fstrim.timer
+echo "enabled paccahe.timer and disk trim"
 
 
 echo "adding fonts"
