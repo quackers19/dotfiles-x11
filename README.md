@@ -23,3 +23,4 @@ Notes about post-install tweaks
 - enable parallel downloads in pacman.conf
 - install reflector to sync pacman download mirrors
   - enable reflector.service so it syncs on boot
+- enable disk trimming with fstrim.timer
