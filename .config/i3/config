@@ -184,8 +184,8 @@ bindsym $mod+r mode "resize"
 
 
 #configure title bar
-default_border pixel 1
-
+default_border none
+font pango:hack 0
 #colours
 #class                 border  backgr. text    indicator child_border
 client.focused          #4C9951 #3E7726 #FFFFFF #43E152   #3E7726
