@@ -39,7 +39,7 @@ echo "enabled paccahe.timer and disk trim"
 
 
 echo "adding fonts"
-cd ~/dotfiles
+cd ~/dotfiles-x11
 mkdir -p ~/.fonts
 cp -r .fonts/* ~/.fonts/
 
@@ -64,7 +64,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.oh-my-zsh/th
 echo "Oh-my-zsh installed!"
 
 echo "adding configs"
-cd ~/dotfiles
+cd ~/dotfiles-x11
 mkdir -p ~/.config
 cp -r .config/* ~/.config
 cp .p10k.zsh ~/
