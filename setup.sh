@@ -41,6 +41,16 @@ systemctl enable paccache.timer fstrim.timer sddm.service tlp.service
 systemctl mask systemd-rfkill.service systemd-rfkill.socket
 echo "enabled paccahe.timer and disk trim"
 
+read -p "Do you want to enable systemmd boot auto update? (yes/no) " yn
+
+case $yn in 
+	yes ) systemctl enable systemd-boot-update.service;;
+	no ) echo exiting...;;
+	* ) echo invalid response;;
+esac
+
+echo doing stuff...
+
 
 echo "adding fonts"
 cd ~/dotfiles-x11
