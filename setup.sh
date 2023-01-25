@@ -29,13 +29,13 @@ echo "Yay installed!"
 cd ~
 
 echo "installing apps"
-sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib htop openssh iwd wireless_tools wpa_supplicant smartmontools xdg-utils i3lock i3status i3blocks xterm sddm dkms xorg-server xorg-xinit --noconfirm
+sudo pacman -S firefox curl wget picom polybar alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib htop openssh iwd wireless_tools wpa_supplicant smartmontools xdg-utils i3lock i3status i3blocks xterm sddm dkms xorg-server xorg-xinit tlp --noconfirm
 yay -S timeshift --noconfirm
 echo "apps installed!"
 
 
 echo "enable pacchae.timer and disk trim"
-systemctl enable paccache.timer fstrim.timer sddm.service
+systemctl enable paccache.timer fstrim.timer sddm.service tlp.service
 echo "enabled paccahe.timer and disk trim"
 
 
