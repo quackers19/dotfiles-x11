@@ -33,6 +33,8 @@ sudo pacman -S i3-wm firefox curl wget picom polybar tlp-rdw alacritty nano neof
 yay -S timeshift --noconfirm
 echo "apps installed!"
 
+echo "graphics drivers installng"
+sudo pacman -S intel-media-driver mesa vulkan-intel xf86-video-intel --noconfirm
 
 echo "enable pacchae.timer and disk trim"
 systemctl enable paccache.timer fstrim.timer sddm.service tlp.service
