@@ -30,6 +30,7 @@ cd ~
 
 echo "installing apps"
 sudo pacman -S i3-wm firefox curl wget picom polybar tlp-rdw alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib htop openssh iwd wireless_tools wpa_supplicant smartmontools xdg-utils i3lock i3status i3blocks xterm sddm dkms xorg-server xorg-xinit tlp --noconfirm
+sudo pacman -S bluez bluez-utils--noconfirm
 yay -S timeshift --noconfirm
 echo "apps installed!"
 
@@ -37,7 +38,7 @@ echo "graphics drivers installng"
 sudo pacman -S intel-media-driver mesa vulkan-intel xf86-video-intel --noconfirm
 
 echo "enable pacchae.timer and disk trim"
-systemctl enable paccache.timer fstrim.timer sddm.service tlp.service
+systemctl enable paccache.timer fstrim.timer sddm.service tlp.service bluetooth.service
 systemctl mask systemd-rfkill.service systemd-rfkill.socket
 echo "enabled paccahe.timer and disk trim"
 
