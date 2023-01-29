@@ -29,7 +29,7 @@ echo "Yay installed!"
 cd ~
 
 echo "installing apps"
-sudo pacman -S i3-wm firefox curl wget ncdu picom polybar tlp-rdw alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib htop openssh iwd wireless_tools wpa_supplicant smartmontools xdg-utils i3lock i3status i3blocks xterm sddm dkms xorg-server xorg-xinit tlp --noconfirm
+sudo pacman -S i3-wm dunst firefox curl wget ncdu picom polybar tlp-rdw alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib htop openssh iwd wireless_tools wpa_supplicant smartmontools xdg-utils i3lock i3status i3blocks xterm sddm dkms xorg-server xorg-xinit tlp --noconfirm
 sudo pacman -S bluez bluez-utils--noconfirm
 yay -S timeshift --noconfirm
 echo "apps installed!"
