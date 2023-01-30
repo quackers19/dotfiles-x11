@@ -35,6 +35,7 @@ yay -S timeshift libinput-gestures --noconfirm
 echo "apps installed!"
 
 echo "setup touchpad"
+sudo gpasswd -a $USER input
 libinput-gestures-setup autostart
 libinput-gestures-setup start
 
@@ -44,7 +45,6 @@ sudo pacman -S intel-media-driver mesa vulkan-intel xf86-video-intel --noconfirm
 echo "enable pacchae.timer and disk trim"
 systemctl enable paccache.timer fstrim.timer sddm.service tlp.service bluetooth.service
 systemctl mask systemd-rfkill.service systemd-rfkill.socket
-sudo gpasswd -a liam input
 echo "enabled paccahe.timer and disk trim"
 
 read -p "Do you want to enable systemmd boot auto update? (yes/no) " yn
