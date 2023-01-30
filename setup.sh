@@ -31,13 +31,9 @@ cd ~
 echo "installing apps"
 sudo pacman -S i3-wm dunst nm-connection-editor firefox curl wget ncdu picom polybar tlp-rdw alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib htop openssh iwd wireless_tools wpa_supplicant smartmontools xdg-utils i3lock i3status i3blocks xterm sddm dkms xorg-server xorg-xinit tlp --noconfirm
 sudo pacman -S bluez bluez-utils --noconfirm
-yay -S timeshift libinput-gestures --noconfirm
+yay -S timeshift --noconfirm
 echo "apps installed!"
 
-echo "setup touchpad"
-sudo gpasswd -a $USER input
-libinput-gestures-setup autostart
-libinput-gestures-setup start
 
 echo "graphics drivers installng"
 sudo pacman -S intel-media-driver mesa vulkan-intel xf86-video-intel --noconfirm
