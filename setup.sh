@@ -44,6 +44,7 @@ sudo pacman -S intel-media-driver mesa vulkan-intel xf86-video-intel --noconfirm
 echo "enable pacchae.timer and disk trim"
 systemctl enable paccache.timer fstrim.timer sddm.service tlp.service bluetooth.service
 systemctl mask systemd-rfkill.service systemd-rfkill.socket
+sudo gpasswd -a liam input
 echo "enabled paccahe.timer and disk trim"
 
 read -p "Do you want to enable systemmd boot auto update? (yes/no) " yn
