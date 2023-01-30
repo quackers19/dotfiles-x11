@@ -209,7 +209,7 @@ exec --no-startup-id picom -b
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #fix touchpad
-exec_always --no-startup-id xinput set-prop 15 325 0.8
+exec_always --no-startup-id xinput set-prop 15 454 0.8
 exec_always --no-startup-id xinput set-prop 15 313 1
 exec_always --no-startup-id xinput set-prop 14 325 0.8
 exec_always --no-startup-id xinput set-prop 14 313 1
