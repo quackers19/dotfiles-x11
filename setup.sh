@@ -85,6 +85,8 @@ mkdir -p ~/.config
 cp -r .config/* ~/.config
 cp .p10k.zsh ~/
 cp .zshrc ~/
+cp .Xinitrc ~/
+cp .Xresources ~/
 
 echo "set default shell to zsh"
 chsh -s $(which zsh)
