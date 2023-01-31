@@ -14,6 +14,11 @@ fi
 echo "enabled parrele downloads pacman"
 sudo sed -i '/ParallelDownloads/s/^#//g' /etc/pacman.conf
 
+echo "adding user to groups and fixing backlight"
+sudo usermod -a -G video $USER 
+cd ~/dotfiles-x11
+sudo cp backlight.rules /etc/udev/rules.d/
+
 echo "Updating repositories:"
 sudo pacman -Syu
 echo "Finished updating repositories!"
