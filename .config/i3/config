@@ -208,6 +208,9 @@ exec --no-startup-id picom -b
 #start polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+#keybord
+exec --no-startup-id xbindkeys &
+
 #fix touchpad
 exec_always --no-startup-id xinput set-prop 15 454 0.8
 exec_always --no-startup-id xinput set-prop 15 313 1
