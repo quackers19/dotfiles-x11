@@ -36,7 +36,6 @@ cd ~
 echo "installing apps"
 sudo pacman -S i3-wm wmctrl dunst nm-connection-editor firefox curl wget ncdu picom polybar tlp-rdw alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib htop openssh iwd wireless_tools wpa_supplicant smartmontools xdg-utils i3lock i3status i3blocks xterm sddm dkms xorg-server xorg-xinit tlp --noconfirm
 sudo pacman -S bluez bluez-utils xorg-xbacklight xbindkeys zsh-syntax-highlighting --noconfirm
-yay -S timeshift --noconfirm
 echo "apps installed!"
 
 
