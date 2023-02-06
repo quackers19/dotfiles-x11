@@ -55,7 +55,19 @@ case $yn in
 	* ) echo invalid response;;
 esac
 
-echo doing stuff...
+
+read -p "Do you want to install other apps spotify discord vpn ect? (yes/no) " yn
+
+case $yn in 
+	yes ) yay -S spotify-launcher discord cloudflare-warp-bin --noconfirm
+	systemctl enable warp-svc.sevice
+	;;
+	no ) echo exiting...;;
+	* ) echo invalid response;;
+esac
+
+
+echo "if this fails you said no to the last step dont worry this is normal, yes its janky"
 
 
 echo "adding fonts"
