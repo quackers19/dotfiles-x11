@@ -89,6 +89,7 @@ cp .p10k.zsh ~/
 cp .zshrc ~/
 cp .Xinitrc ~/
 cp .Xresources ~/
+cp .xbindkeysrc ~/
 
 echo "set default shell to zsh"
 chsh -s $(which zsh)
