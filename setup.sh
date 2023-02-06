@@ -67,8 +67,6 @@ case $yn in
 esac
 
 
-echo "if this fails you said no to the last step dont worry this is normal, yes its janky"
-
 
 echo "adding fonts"
 cd ~/dotfiles-x11
