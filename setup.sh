@@ -34,7 +34,7 @@ echo "Yay installed!"
 cd ~
 
 echo "installing apps"
-sudo pacman -S i3-wm wmctrl dunst nm-connection-editor firefox curl wget ncdu picom polybar tlp-rdw alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib htop openssh iwd wireless_tools wpa_supplicant smartmontools xdg-utils i3lock i3status i3blocks xterm sddm dkms xorg-server xorg-xinit tlp --noconfirm
+sudo pacman -S i3-wm wmctrl maim dunst nm-connection-editor firefox curl wget ncdu picom polybar tlp-rdw alacritty nano neofetch nitrogen rofi breeze-gtk thunar lxappearance ttf-hack pacman-contrib htop openssh iwd wireless_tools wpa_supplicant smartmontools xdg-utils i3lock i3status i3blocks xterm sddm dkms xorg-server xorg-xinit tlp --noconfirm
 sudo pacman -S bluez bluez-utils xorg-xbacklight xbindkeys zsh-syntax-highlighting --noconfirm
 echo "apps installed!"
 
@@ -55,7 +55,17 @@ case $yn in
 	* ) echo invalid response;;
 esac
 
-echo doing stuff...
+
+read -p "Do you want to install other apps spotify discord vpn ect? (yes/no) " yn
+
+case $yn in 
+	yes ) yay -S spotify-launcher discord cloudflare-warp-bin --noconfirm
+	systemctl enable warp-svc.sevice
+	;;
+	no ) echo exiting...;;
+	* ) echo invalid response;;
+esac
+
 
 
 echo "adding fonts"
