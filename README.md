@@ -20,3 +20,4 @@ Notes about post-install tweaks
 - install breeze-gtk for theme then install and use lxapearance to switch
 - setup sbctl fix systemd boot update
 - if changing back light through polybar is broken refer to <https://wiki.archlinux.org/title/backlight#ACPI>, refer to udev rule section
+- if want custom boot animation configure yourself lol <https://github.com/PROxZIMA/proxzima-plymouth>
