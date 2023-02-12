@@ -213,6 +213,7 @@ exec --no-startup-id xbindkeys &
 
 #fix touchpad
 exec_always --no-startup-id xinput set-prop 15 454 0.8
+exec_always --no-startup-id xinput set-prop 15 455 0.8
 exec_always --no-startup-id xinput set-prop 15 313 1
 exec_always --no-startup-id xinput set-prop 14 325 0.8
 exec_always --no-startup-id xinput set-prop 14 325 0.8
